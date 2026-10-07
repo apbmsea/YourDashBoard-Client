@@ -1,0 +1,26 @@
+.auth-page {
+	display: flex;
+	min-height: 100vh;
+	min-height: 100dvh;
+
+	&__content {
+		display: flex;
+		flex: 1;
+		align-items: center;
+		justify-content: center;
+		padding: 24px 20px;
+	}
+
+	&__card {
+		width: 100%;
+		max-width: 360px;
+	}
+
+	@media (max-width: 480px) {
+		// на телефоне форма ближе к верху, чтобы её не перекрывала клавиатура
+		&__content {
+			align-items: flex-start;
+			padding-top: 18vh;
+		}
+	}
+}
