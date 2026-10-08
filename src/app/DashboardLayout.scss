@@ -1,0 +1,14 @@
+.dashboard-layout {
+	display: flex;
+	min-height: 100vh;
+	min-height: 100dvh;
+
+	&__content {
+		flex: 1;
+		min-width: 0;
+	}
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
+}

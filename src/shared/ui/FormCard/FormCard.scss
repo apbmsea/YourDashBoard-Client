@@ -1,0 +1,57 @@
+.form-card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	animation: form-card-in 0.3s ease-out;
+
+	&--form {
+		align-items: stretch;
+		gap: 12px;
+	}
+
+	&__badge {
+		display: grid;
+		place-items: center;
+		width: 48px;
+		height: 48px;
+		margin-bottom: 20px;
+		border-radius: var(--radius);
+		background: var(--color-soft);
+	}
+
+	&__title {
+		margin: 0 0 6px;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 1.2;
+		letter-spacing: -0.02em;
+	}
+
+	&__text {
+		margin: 0 0 28px;
+		font-size: 15px;
+		color: var(--color-text-muted);
+
+		strong {
+			font-weight: inherit;
+			color: var(--color-text);
+			overflow-wrap: anywhere;
+		}
+	}
+
+	// в форме отступы между полями задаёт gap
+	&--form &__title {
+		margin-bottom: -6px;
+	}
+
+	&--form &__text {
+		margin-bottom: 16px;
+	}
+}
+
+@keyframes form-card-in {
+	from {
+		opacity: 0;
+		transform: translateY(6px);
+	}
+}

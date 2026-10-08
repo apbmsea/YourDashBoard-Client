@@ -16,11 +16,19 @@
 		max-width: 360px;
 	}
 
+	&__logo {
+		margin-bottom: 40px;
+	}
+
 	@media (max-width: 480px) {
 		// на телефоне форма ближе к верху, чтобы её не перекрывала клавиатура
 		&__content {
 			align-items: flex-start;
-			padding-top: 18vh;
+			padding-top: 12vh;
+		}
+
+		&__logo {
+			margin-bottom: 32px;
 		}
 	}
 }

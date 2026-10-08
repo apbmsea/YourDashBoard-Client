@@ -1,0 +1,41 @@
+.settings-page {
+	&__list {
+		max-width: 480px;
+		margin: 0 0 28px;
+		border: 1px solid var(--color-border);
+		border-radius: var(--radius);
+	}
+
+	&__row {
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: 16px;
+		padding: 14px 16px;
+
+		& + & {
+			border-top: 1px solid var(--color-border);
+		}
+	}
+
+	&__label {
+		flex-shrink: 0;
+		font-size: 13px;
+		font-weight: 500;
+		color: var(--color-text-muted);
+	}
+
+	&__danger {
+		max-width: 480px;
+		margin-top: 40px;
+		padding-top: 28px;
+		border-top: 1px solid var(--color-border);
+	}
+
+	&__value {
+		margin: 0;
+		font-size: 15px;
+		text-align: right;
+		overflow-wrap: anywhere;
+	}
+}

@@ -1,0 +1,23 @@
+.page {
+	max-width: 960px;
+	padding: 32px 40px;
+
+	&__title {
+		margin: 0 0 24px;
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 1.2;
+		letter-spacing: -0.02em;
+	}
+
+	&__text {
+		margin: 0;
+		font-size: 15px;
+		color: var(--color-text-muted);
+		overflow-wrap: anywhere;
+	}
+
+	@media (max-width: 768px) {
+		padding: 24px 20px;
+	}
+}

@@ -1,0 +1,20 @@
+.logo {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	color: var(--color-text);
+
+	&__icon {
+		flex-shrink: 0;
+		width: 32px;
+		height: 32px;
+	}
+
+	&__text {
+		font-size: 17px;
+		font-weight: 700;
+		line-height: 1;
+		letter-spacing: -0.02em;
+		white-space: nowrap;
+	}
+}

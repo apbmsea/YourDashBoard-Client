@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
-import { Auth } from '@entities/auth';
+import { User } from '@entities/user';
 import { tokenStorage } from '@shared/api/tokens';
 import { useAppDispatch } from '@shared/hooks/store.hooks';
 import './Layout.scss';
@@ -10,7 +10,7 @@ const Layout = () => {
 
 	useEffect(() => {
 		if (tokenStorage.getAccess()) {
-			dispatch(Auth.actions.meRequest());
+			dispatch(User.actions.meRequest());
 		}
 	}, [dispatch]);
 
